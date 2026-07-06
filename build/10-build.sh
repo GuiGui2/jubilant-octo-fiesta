@@ -46,9 +46,12 @@ echo "::group:: Install Packages"
 # Install a minimal package to verify the cache is working
 # This ensures the DNF cache is populated for future builds
 dnf5 install -y tmux
+dnf5 install -y google-noto-emoji-fonts ibm-plex-fonts-all aajohan-comfortaa-fonts amiri-fonts-all cjkuni-ukai-fonts adobe-source-code-pro-fonts adobe-source-code-vf-fonts adobe-source-sans-pro-fonts leland-fonts-all lilypond-emmentaler-fonts lilypond-fonts-common
 
 # Example using COPR with isolated pattern:
 # copr_install_isolated "ublue-os/staging" package-name
+copr_install_isolated "atim/starship" starship
+copr_install_isolated "atim/bottom" bottom
 
 echo "::endgroup::"
 
