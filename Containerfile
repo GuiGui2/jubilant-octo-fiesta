@@ -55,7 +55,7 @@ FROM quay.io/fedora-ostree-desktops/silverblue:44@sha256:62c3eb050e322c3c5284792
 
 # Image identity - these define how bootc, fastfetch, and the ublue ecosystem
 # recognize your image. Change these to match your project name.
-ARG IMAGE_NAME="jubilant-octo-fiesta"
+ARG IMAGE_NAME="jubilant-octo-fiesta-nvidia"
 ARG IMAGE_VENDOR="projectbluefin"
 ARG UBLUE_IMAGE_TAG="stable"
 ARG BASE_IMAGE_NAME="silverblue"
