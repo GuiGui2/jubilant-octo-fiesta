@@ -197,7 +197,7 @@ jobs:
       - name: Sign and publish
         if: github.event_name != 'pull_request'
         continue-on-error: true
-        uses: projectbluefin/actions/bootc-build/sign-and-publish@6231015b336556d2ff0adc1d1e59514bf19dcb42 # v1
+        uses: projectbluefin/actions/bootc-build/sign-and-publish@8fd476d7ad4023d3bcb56481407913fd6cf73f60 # v1
         with:
           image: ${{ env.IMAGE_REGISTRY }}/${{ env.IMAGE_NAME }}
           digest: ${{ steps.push.outputs.digest }}
