@@ -2,7 +2,7 @@ export IMAGE_NAME := env("IMAGE_NAME", "jubilant-octo-fiesta")
 export DEFAULT_TAG := env("DEFAULT_TAG", "stable")
 export PODMAN := env("PODMAN", "podman")
 export REPO_ORG := env("GITHUB_REPOSITORY_OWNER", "projectbluefin")
-export bib_image := env("BIB_IMAGE", "quay.io/centos-bootc/bootc-image-builder:latest@sha256:e8df8c535ffe40b418e44dd55abd2c11f65602468661b34e0ea98a532a8e577c")
+export bib_image := env("BIB_IMAGE", "quay.io/centos-bootc/bootc-image-builder:latest@sha256:4d8a0d9d173a9f450ff42d70777e1e0a6681a68f5c0f5084b65222eceb1f4d05")
 
 alias build-vm := build-qcow2
 alias rebuild-vm := rebuild-qcow2
